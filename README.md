@@ -16,7 +16,10 @@ We first need to install the supervisor
    - supervisorctl reread (This will kind of compile the conf file and show that it is available Note: you need to create the respective directory for the logs)
    - supervisorctl reload (THis will reload your conf file and run the newly added supervisor confs)
 - Following are the useful commands
-   - supervisorctl restart <program:name> In our case it would be webhook. This names are defined in the .conf file)
+   - supervisorctl restart <program:name> (In our case it would be webhook. This names are defined in the .conf file)
+   - supervisorctl status <program:name> (Displays the status of the given program name)
+   - supervisorctl stop <program:name> (Stops the given program name)
+   - supervisorctl start <program:name> (Starts the given program name)
    
 To complete this tutorial kindly place the files in the respective directories and make your changes:
 My working directory where i have placed mine http.js file is:
@@ -24,4 +27,5 @@ My working directory where i have placed mine http.js file is:
 
 Refrences:
 https://serversforhackers.com/c/process-monitoring-with-supervisord
+
 https://www.youtube.com/watch?v=8ZVf0T1I2vw&t=30s 
